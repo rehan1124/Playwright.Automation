@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {},
   "keywords": [],
-  "author": "",
+  "author": "Syed Rehan",
   "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.45.1",

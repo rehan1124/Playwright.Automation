@@ -20,4 +20,6 @@ Run tests in headed mode `npx playwright test --headed`
 Run tests on different browsers `npx playwright test --project webkit`
 
 Recording a Trace `npx playwright test --trace on`
+
+Run tests in UI mode `npx playwright test --ui`
 ```
