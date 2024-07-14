@@ -11,7 +11,13 @@ Playwright with TypeScript [Latest 2024 By Naveen Automation Labs]
 - Test execution related commands
 
 ```
-Run the tests using `npx playwright test`
+Run the tests in headless mode using `npx playwright test`
+
 Generate and check report `npx playwright show-report`
+
 Run tests in headed mode `npx playwright test --headed`
+
+Run tests on different browsers `npx playwright test --project webkit`
+
+Recording a Trace `npx playwright test --trace on`
 ```
