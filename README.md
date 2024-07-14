@@ -23,3 +23,10 @@ Recording a Trace `npx playwright test --trace on`
 
 Run tests in UI mode `npx playwright test --ui`
 ```
+
+- Install TypeScript and enable using below commands
+
+```
+npm install typescript --save-dev
+npx tsc --init
+```
