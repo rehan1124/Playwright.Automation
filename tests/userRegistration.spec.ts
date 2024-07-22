@@ -24,30 +24,30 @@ test("New user registration", async () => {
     page.getByRole("heading", { name: "Register Account" })
   ).toBeVisible();
 
-  const firstName = page.getByRole("textbox", { name: "First Name" });
+  const firstName: Locator = page.getByRole("textbox", { name: "First Name" });
   await firstName.fill("Arthur");
 
-  const lastName = page.getByRole("textbox", { name: "Last Name" });
+  const lastName: Locator = page.getByRole("textbox", { name: "Last Name" });
   await lastName.fill("Dayne");
 
-  const email = page.getByRole("textbox", { name: "E-Mail" });
+  const email: Locator = page.getByRole("textbox", { name: "E-Mail" });
   await email.fill("Arthur.Dayne@gmail.com");
 
-  const telephone = page.getByRole("textbox", { name: "Telephone" });
+  const telephone: Locator = page.getByRole("textbox", { name: "Telephone" });
   await telephone.fill("1234567890");
 
-  const password = page.locator("#input-password");
+  const password: Locator = page.locator("#input-password");
   await password.fill("Arthur123456@");
-  const confirmPassword = page.locator("#input-confirm");
+  const confirmPassword: Locator = page.locator("#input-confirm");
   await confirmPassword.fill("Arthur123456@");
 
-  const subscribeYes = page.getByRole("radio", { name: "Yes" });
+  const subscribeYes: Locator = page.getByRole("radio", { name: "Yes" });
   await subscribeYes.click();
 
-  const privacyPolicy = page.locator("[name='agree']");
+  const privacyPolicy: Locator = page.locator("[name='agree']");
   await privacyPolicy.click();
 
-  const continuebtn = page.getByRole("button", { name: "Continue" });
+  const continuebtn: Locator = page.getByRole("button", { name: "Continue" });
   await continuebtn.click();
 
   await page.close();
